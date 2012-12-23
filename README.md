@@ -6,12 +6,12 @@
 * Google Fonts
 * [HTML5-SKELETON](https://github.com/smorcuend/HTML5-SKELETON)
 * [FitText.js](https://github.com/davatron5000/FitText.js)
-* [Font Awesome](http://fortawesome.github.com/Font-Awesome)
+* [Font Awesome](http://fortawesome.github.com/Font-Awesome) _(not yet)_
 
 
 ## Technologies used
-* Ruby
-* Jekyll
+* Ruby _(not yet)_
+* Jekyll _(not yet)_
 * Git
 * jQuery
 
