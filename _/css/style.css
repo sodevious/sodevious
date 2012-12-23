@@ -1,18 +1,18 @@
 body {
   font: 16px "Bree Serif", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-  background: url(../img/old_mathematics.png);
-  padding: 10px; }
+  background: url(../img/old_mathematics.png); }
 
 .wrapper {
-  width: 98%;
+  width: 100%;
   margin: 0 auto;
-  max-width: 1140px; }
+  max-width: 540px; }
 
 header {
   width: 100%;
   margin: 0px auto;
   text-align: center;
-  margin-top: 20px; }
+  margin-top: 20px;
+  -webkit-font-smoothing: antialiased; }
   header h1 {
     font: normal 50px "Raleway";
     text-transform: uppercase;
@@ -26,6 +26,46 @@ header {
     text-shadow: 0 2px 0 white;
     margin-bottom: 100px;
     line-height: .3em; }
+  header .buttons a {
+    color: #f7f7f7;
+    text-decoration: none;
+    line-height: normal;
+    margin: 10px;
+    text-align: center;
+    display: inline; }
+    header .buttons a i {
+      background: yellow;
+      -moz-border-radius: 30px;
+      -webkit-border-radius: 30px;
+      border-radius: 30px;
+      /* future proofing */
+      -khtml-border-radius: 30px;
+      padding: 15px 15px 10px 15px;
+      font-size: 24px;
+      -webkit-font-smoothing: antialiased; }
+    header .buttons a i.icon-facebook {
+      padding: 15px 22px 10px 22px;
+      background: #3B5998; }
+    header .buttons a i.icon-linkedin {
+      padding: 15px 18px 10px 18px;
+      background: #4875B4; }
+    header .buttons a i.icon-twitter {
+      background: #10AAF2; }
+    header .buttons a i.icon-github {
+      background: #4185D2; }
+  header .buttons a:hover {
+    color: #ccc; }
+
+footer p {
+  bottom: 7px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  color: #6c8888;
+  font-size: 12px; }
+footer a {
+  text-decoration: none;
+  color: #85a5bb; }
 
 @media all and (min-width: 481px) {
   aside {
@@ -34,7 +74,7 @@ header {
     margin-top: 40px; }
     aside p {
       padding: 20px;
-      font-size: 18px;
+      font-size: 17px;
       margin-bottom: 70px; }
     aside a {
       background: url(../img/nicolepaddydavid.jpg);
@@ -42,7 +82,7 @@ header {
       display: block;
       width: 100%;
       margin: 0px auto;
-      opacity: 0.4;
+      opacity: 0;
       background-position: top center;
       height: auto;
       background-size: 85%; }
@@ -64,19 +104,11 @@ header {
     aside span:hover {
       opacity: 1 !important; } }
 @media all and (max-width: 480px) {
-  aside a {
-    display: none; }
-  aside p {
-    padding: 20px;
-    font-size: 18px;
-    margin-bottom: 40px; } }
-footer p {
-  bottom: 7px;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 5px;
-  color: #6c8888;
-  font-size: 12px; }
-footer a {
-  text-decoration: none;
-  color: #85a5bb; }
+  aside {
+    margin-top: 40px; }
+    aside a {
+      display: none; }
+    aside p {
+      padding: 20px;
+      font-size: 18px;
+      margin-bottom: 40px; } }
