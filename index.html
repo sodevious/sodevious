@@ -67,8 +67,10 @@
 		<header>
 			
 			<h1>
-  			<span>Nicole Dominguez is</span>
-  			<a href="">@sodevious</a>
+  			<span class="name">Nicole Dominguez is</span><br />
+  			<a href="#" class="sodevious">@sodevious</a>
+  			
+  			<div class="clearfix"></div>
 			</h1>
 			
 
@@ -76,14 +78,16 @@
 
 		
 		<aside>
+		
+		<img src="_/img/nicolepaddydavid.jpg" alt="@sodevious, Paddington Vidal, and @therabidbanana at the Reachably offices" />
 		  
-		  <p>This space is currently in development... 
+		  <p>This space is currently in development... but check back soon!</p> 
     		
 		</aside>
 		
 		<footer>
 			
-			<p><small>&copy; Copyright Your Name Here <span id="copyright_year"></span>. All Rights Reserved.</small></p>
+			<p><small>&copy; Copyright <a href="http://nicoledominguez.com">Nicole Dominguez</a> 1994-<span id="copyright_year"></span>. All Rights Reserved.</small></p>
 			
 		</footer>
 
@@ -115,5 +119,11 @@
 	</script>
 	-->
   
+  <script src="_/js/jquery.fittext.js"></script>
+  <script type="text/javascript">
+  	$("#name").fitText();
+  	$("#sodevious").fitText(1.2);
+  	$("#fittext3").fitText(1.1, { minFontSize: 50, maxFontSize: '75px' });
+  </script>
 </body>
 </html>
