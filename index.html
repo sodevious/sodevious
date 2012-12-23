@@ -66,22 +66,21 @@
 
 		<header>
 			
-			<h1>
-  			<span class="name">Nicole Dominguez is</span><br />
-  			<a href="#" class="sodevious">@sodevious</a>
+  			<h1 id="name">Nicole Dominguez is</h1><br />
+  			<h2 id="sodevious"><a href="http://twitter.com/sodevious">@sodevious</a></h2>
   			
   			<div class="clearfix"></div>
-			</h1>
 			
 
 		</header>
 
 		
 		<aside>
-		
-		<img src="_/img/nicolepaddydavid.jpg" alt="@sodevious, Paddington Vidal, and @therabidbanana at the Reachably offices" />
-		  
-		  <p>This space is currently in development... but check back soon!</p> 
+					  
+			  <p>This space is currently in development... but check back soon!</p> 
+
+			  <a><span>@sodevious, Paddy, and @therabidbanana's head at the reachably hq</span></a>
+
     		
 		</aside>
 		
@@ -93,13 +92,7 @@
 
 	</div>
 
-	<!-- here comes the javascript -->
 
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="_/js/jquery-1.8.3.min.js"><\/script>')</script>
-
-	<!-- this is where we put our custom functions -->
-	<script type="text/javascript" src="_/js/functions.js"></script>
 
 	<!-- Asynchronous google analytics; this is the official snippet.
 		 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
@@ -118,12 +111,11 @@
 
 	</script>
 	-->
-  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script src="_/js/jquery.fittext.js"></script>
   <script type="text/javascript">
-  	$("#name").fitText();
-  	$("#sodevious").fitText(1.2);
-  	$("#fittext3").fitText(1.1, { minFontSize: 50, maxFontSize: '75px' });
+  	$("h1#name").fitText(1.2, { maxFontSize: '50px' });
+  	$("h2#sodevious a").fitText(.6, { maxFontSize: '96px' });
   </script>
 </body>
 </html>

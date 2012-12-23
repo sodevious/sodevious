@@ -1,42 +1,51 @@
 body {
   font: 16px "Bree Serif", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   background: url(../img/old_mathematics.png);
-  padding: 10px; }
+  padding: 10px;
+}
 
 .wrapper {
   width: 98%;
   margin: 0 auto;
-  max-width: 1140px; }
+  max-width: 1140px;
+}
 
 header {
   width: 100%;
   margin: 0px auto;
   text-align: center;
-  margin-top: 20px; }
-  header h1 {
+  margin-top: 20px;
+  
+  h1 {
     font: normal 50px "Raleway";
     text-transform: uppercase;
-    display: block; }
-  header h2 a {
+    display: block;
+  }
+
+  h2 a {
     font-size: 170px;
     line-height: 10px;
     display: block;
     text-decoration: none;
     color: #bd0c72;
-    text-shadow: 0 2px 0 white;
+    text-shadow: 0 2px 0 #ffffff;
     margin-bottom: 100px;
-    line-height: .3em; }
+    line-height: .3em;
+  }
+}
 
 @media all and (min-width: 481px) {
+
   aside {
     text-align: center;
     width: 100%;
-    margin-top: 40px; }
-    aside p {
+    margin-top: 40px;
+    p {
       padding: 20px;
       font-size: 18px;
-      margin-bottom: 70px; }
-    aside a {
+      margin-bottom: 70px;
+    }
+    a {
       background: url(../img/nicolepaddydavid.jpg);
       background-repeat: no-repeat;
       display: block;
@@ -45,10 +54,12 @@ header {
       opacity: 0.4;
       background-position: top center;
       height: auto;
-      background-size: 85%; }
-    aside a:hover {
-      opacity: 1; }
-    aside span {
+      background-size: 85%;
+    }
+    a:hover {
+      opacity: 1;
+    }
+    span {
       height: 180px;
       line-height: 20px;
       font-size: 14px;
@@ -60,23 +71,40 @@ header {
       top: -25px;
       color: #666;
       display: block;
-      opacity: 0; }
-    aside span:hover {
-      opacity: 1 !important; } }
+      opacity: 0;
+    }
+    span:hover {
+      opacity: 1.0 !important;
+    }
+  }
+}
+
 @media all and (max-width: 480px) {
-  aside a {
-    display: none; }
-  aside p {
-    padding: 20px;
-    font-size: 18px;
-    margin-bottom: 40px; } }
-footer p {
-  bottom: 7px;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 5px;
-  color: #6c8888;
-  font-size: 12px; }
-footer a {
-  text-decoration: none;
-  color: #85a5bb; }
+ 
+  aside {
+    a {
+      display: none;
+    }
+    p {
+          padding: 20px;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+  }
+}
+
+footer {
+  p {
+    bottom: 7px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    color: #6c8888;
+    font-size: 12px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #85a5bb;
+  }
+}
